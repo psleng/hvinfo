@@ -1,4 +1,5 @@
 # hvinfo
+
 Yet another hypervisor detection tool for UNIX-like systems.
 
 ### Design goals
@@ -9,9 +10,10 @@ Yet another hypervisor detection tool for UNIX-like systems.
 
 ## Building
 
-To build it, you need GNU Make, GNAT 4.x or higher (Ada 2005 support required) and gprbuild.
+To build hvinfo, you need GNU Make, GNAT 4.x or higher (Ada 2005 support required) and gprbuild.
 
 Build setup is rather simplistic at this time.
+
 ```
 cd hvinfo
 gmake
@@ -20,15 +22,17 @@ gmake install PREFIX=<some dir>
 
 ### Building a Debian package
 
-Debian packaging is not yet good enough to get it included in Debian, but should
-be fine for local use. Install the devscripts package and do:
+Debian packaging is not yet good enough to get it included in Debian,
+but should be fine for local use.
+
+Install the devscripts package and run:
 
 ```
-debuild -us -uc
+dpkg-buildpackage -b -us -uc
 ```
 
-If you have your Ada toolchain installed in an unusual location, it's better to ensure you have it
-in your $PATH.
+If you have your Ada toolchain installed in an unusual location,
+it's better to ensure you have it in your `$PATH`.
 
 # OS and hypervisor support
 
@@ -43,12 +47,4 @@ and this is currently only supported on Linux because it provides DMI informatio
 via sysfs to unprivileged users. FreeBSD requires root privileges for DMI reading,
 so Parallels is undetectable on FreeBSD right now.
 
-Container systems such as LXC and OpenVZ are not supported yet.
-
-Virtualization systems for platforms other than x86 aren't supported either.
-
 Patches are welcome.
-
-# TODO
-* Implementation-independent makefile (anyone knows how to make ifdef work in both make flavours?)
-* Containers virtualization detection.
