@@ -8,6 +8,6 @@ Build-Depends: debhelper (>= 12), gnat (>=12.0), gprbuild
 Package: hvinfo
 Depends: libgnat-12
 Architecture: i386 amd64 armhf arm64
-Description: x86 hypervisor detection tool
- An x86 hypervisor detection with support for detecting
- KVM, Xen PV or HVM, VMware, and others.
+Description: Hypervisor detection tool
+ A hypervisor detection tool that supports detecting
+ KVM, Xen PV or HVM, VMware, Bhyve, and other full virtualization environments.

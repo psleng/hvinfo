@@ -1,3 +1,9 @@
+hvinfo (1.2.1) unstable; urgency=medium
+
+  * Small updates in the README file and package description.
+
+ -- Daniil Baturin <daniil@baturin.org>  Mon, 10 Nov 2025 12:58:02 +0000
+
 hvinfo (1.2.0) unstable; urgency=medium
 
   * Add support for detecting non-accelerated QEMU > 2.10 on all platforms
