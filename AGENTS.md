@@ -35,17 +35,13 @@ No automated test suite; the binary itself is the test (run on each target hyper
 
 ## Cross-repo context
 
-One of the canonical 14 VyOS-image build packages, listed in `VyOS-Networks/vyos-build-packages/repos.toml`. Built into VyOS images by `vyos-build` and consumed at runtime by `vyos-1x` to detect virtualisation context. Native-package category — no application-level test runner beyond `dpkg-buildpackage`.
+One of the canonical 14 VyOS-image build packages, listed in an internal repository. Built into VyOS images by `vyos-build` and consumed at runtime by `vyos-1x` to detect virtualisation context. Native-package category — no application-level test runner beyond `dpkg-buildpackage`.
 
 ## Conventions
 
 - Commit / PR title format: `component: T12345: description` (Phorge task ID at https://vyos.dev mandatory). Enforced by `vyos/.github` reusable workflows where consumed.
 - Author: Daniil Baturin; one of the very few Ada packages in the VyOS ecosystem.
 - License: GPL-2-or-later.
-
-## Mirror relationship
-
-Mirror twin: `VyOS-Networks/hvinfo`. Canonical side is **here** (`vyos/hvinfo`). Per the cross-repo audit §8.4, `VyOS-Networks/hvinfo` has its workflows on the `git-actions` branch — that is **not** the canonical state; defer to this repo.
 
 ## Notes for future contributors
 
