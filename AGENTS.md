@@ -2,7 +2,7 @@
 
 ## Project purpose
 
-Hypervisor-detection CLI tool for UNIX-like systems. Reports which hypervisor (KVM, Xen, VMware, Hyper-V, …) the host is running on without requiring root privileges. Used at boot/runtime by VyOS to tailor behaviour per virtualisation environment.
+Hypervisor detection CLI tool for UNIX-like systems. Reports which hypervisor (KVM, Xen, VMware, Hyper-V, …) the host is running on without requiring root privileges.
 
 ## Tech stack
 
@@ -40,7 +40,6 @@ One of the canonical 14 VyOS-image build packages, listed in `VyOS-Networks/vyos
 ## Conventions
 
 - Commit / PR title format: `component: T12345: description` (Phorge task ID at https://vyos.dev mandatory). Enforced by `vyos/.github` reusable workflows where consumed.
-- Branch model: `current` (rolling), `circinus` (1.5 LTS), `sagitta` (1.4 LTS), `equuleus` (1.3 LTS).
 - Author: Daniil Baturin; one of the very few Ada packages in the VyOS ecosystem.
 - License: GPL-2-or-later.
 
@@ -50,6 +49,6 @@ Mirror twin: `VyOS-Networks/hvinfo`. Canonical side is **here** (`vyos/hvinfo`).
 
 ## Notes for future contributors
 
-- Build needs Ada 2005 toolchain (`gnat`, `gprbuild`, `gnatprep`) — uncommon in modern dev environments.
+- Build needs Ada 2005 toolchain (`gnat`, `gprbuild`, `gnatprep`).
 - Adding a new hypervisor signature: extend the relevant Ada module under `src/` and bump `VERSION`.
 - License: GPL-2.
