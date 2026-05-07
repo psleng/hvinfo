@@ -45,7 +45,7 @@ One of the canonical 14 VyOS-image build packages, listed in `VyOS-Networks/vyos
 
 ## Mirror relationship
 
-Mirror twin: `VyOS-Networks/hvinfo`. Canonical side is **here** (`vyos/hvinfo`). Per the relations doc §8.4, `VyOS-Networks/hvinfo` has its workflows on the `git-actions` branch — that is **not** the canonical state; defer to this repo.
+Mirror twin: `VyOS-Networks/hvinfo`. Canonical side is **here** (`vyos/hvinfo`). Per the cross-repo audit §8.4, `VyOS-Networks/hvinfo` has its workflows on the `git-actions` branch — that is **not** the canonical state; defer to this repo.
 
 ## Notes for future contributors
 
